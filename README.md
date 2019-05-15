@@ -63,5 +63,9 @@ or
 ## restart a container
 `docker restart container_name`
 
-## Run a stopped container with the same command that
+## Run a stopped container with the same command
 `docker start -ai <container_name>`
+
+## Run a stopped container with a differnt command (for example start an interactive terminal)
+`docker start <container_name>`
+`docker exec -it <container_name> /bin/bash`
