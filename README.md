@@ -38,3 +38,27 @@ The above method to keep files but not track changes do not work on directories 
 ```git ls-files -z myFolderToIgnore/ | xargs -0 git update-index --assume-unchanged```
 
 ref: https://stackoverflow.com/questions/16346535/recursive-git-update-index-assume-unchanged
+
+# Docker commands
+
+## list images
+`docker image ls`
+
+## list containers
+`docker container ls`
+or
+`docker ps`
+
+`--all` flag can be used to list all containers
+
+## Build image
+`docker build --tag=name:tag .`
+
+## Deploy a container form image
+`docker run name:tag`
+
+## bash in to a container if it's linux
+`docker run -it --name="name_for_container" image_name:tag /bin/bash`
+
+## restart a container
+`docker restart container_name`
