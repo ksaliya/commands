@@ -62,3 +62,6 @@ or
 
 ## restart a container
 `docker restart container_name`
+
+## Run a stopped container with the same command that
+`docker start -ai <container_name>`
