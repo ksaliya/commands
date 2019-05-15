@@ -68,4 +68,5 @@ or
 
 ## Run a stopped container with a differnt command (for example start an interactive terminal)
 `docker start <container_name>`
+
 `docker exec -it <container_name> /bin/bash`
