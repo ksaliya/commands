@@ -70,3 +70,9 @@ or
 `docker start <container_name>`
 
 `docker exec -it <container_name> /bin/bash`
+
+## Save a docker image
+`docker save -o <path for generated tar file> <image name>`
+
+## Load an image from file
+`docker load -i <path to image tar file>`
