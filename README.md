@@ -44,6 +44,9 @@ ref: https://stackoverflow.com/questions/16346535/recursive-git-update-index-ass
 ## list images
 `docker image ls`
 
+## Add a new tag to an image
+`docker image tag <image-id> <new-name:[tag]>`
+
 ## list containers
 `docker container ls`
 or
