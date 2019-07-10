@@ -57,7 +57,7 @@ or
 ## Build image
 `docker build --tag=name:tag .`
 
-## Deploy a container form image
+## Deploy a container from image
 `docker run name:tag`
 
 ## bash in to a container if it's linux
@@ -79,3 +79,21 @@ or
 
 ## Load an image from file
 `docker load -i <path to image tar file>`
+
+## Remove all docker containers (ref: https://coderwall.com/p/ewk0mq/stop-remove-all-docker-containers)
+```bash
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
+
+# <span style="color:green">gcloud SDK</span>
+## Install gcloud sdk (linux)
+1. Follow the instructions in https://cloud.google.com/sdk/docs/downloads-apt-get
+2. If the above instructions don't work
+ - Follow this link https://github.com/GoogleContainerTools/base-images-docker/issues/50
+ - Execute the following,
+ ```bash
+ echo "deb http://packages.cloud.google.com/apt cloud-sdk-stretch main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
+    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
+    apt-get update -y && apt-get install google-cloud-sdk -y
+ ```
