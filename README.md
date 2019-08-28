@@ -39,6 +39,13 @@ The above method to keep files but not track changes do not work on directories 
 
 ref: https://stackoverflow.com/questions/16346535/recursive-git-update-index-assume-unchanged
 
+## Remove a directory from being tracking
+Add the directory to the .gitignore
+`path_to/the_directory_to_ignore/`
+
+run
+`git rm -r --cached path_to/the_directory_to_ignore/`
+
 # Docker commands
 
 ## list images
